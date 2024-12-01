@@ -482,7 +482,7 @@ function InstanceObject:Construct()
 	options.textOutline = options.textOutline == nil and true or options.textOutline;
 	options.textOutlineColor = options.textOutlineColor or Color3.new();
 	options.textSize = options.textSize or 13;
-	options.textFont = options.textFont or 2;
+	options.textFont = options.textFont or 0;
 	options.limitDistance = options.limitDistance or false;
 	options.maxDistance = options.maxDistance or 150;
 
@@ -540,10 +540,10 @@ local EspInterface = {
 	_objectCache = {},
 	whitelist = {},
 	sharedSettings = {
-		textSize = 13,
-		textFont = 3,
+		textSize = 15,
+		textFont = 0,
 		limitDistance = false,
-		maxDistance = 150,
+		maxDistance = 200,
 		useTeamColor = false
 	},
 	teamSettings = {
