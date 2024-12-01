@@ -10,8 +10,7 @@ local workspace = game:GetService("Workspace");
 local localPlayer = players.LocalPlayer;
 local camera = workspace.CurrentCamera;
 local viewportSize = camera.ViewportSize;
-local container = Instance.new("Folder",
-	gethui and gethui() or game:GetService("CoreGui"));
+local container = Instance.new("Folder", gethui and gethui() or game:GetService("CoreGui"));
 
 -- locals
 local floor = math.floor;
@@ -542,7 +541,7 @@ local EspInterface = {
 	whitelist = {},
 	sharedSettings = {
 		textSize = 13,
-		textFont = 50,
+		textFont = 3,
 		limitDistance = false,
 		maxDistance = 150,
 		useTeamColor = false
